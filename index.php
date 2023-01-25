@@ -1,5 +1,5 @@
 
-    <!-- Header -->
+   <!-- Header -->
 <?php include 'modelos/header.php' ?>
     <!-- Buscador -->
 <?php include 'modelos/buscador.php' ?>
