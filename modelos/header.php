@@ -39,7 +39,7 @@
                   </li> -->
                 </ul>
                 <div class="btn-group btodt" role="group" aria-label="Basic example">
-                  <button type="button" onclick="window.open('/papeleria_nelsy/CRUD/CRUD.php')" class="btn btn-warning">CRUD</button>
+                  <button type="button" onclick="window.open('/CRUD/CRUD.php')" class="btn btn-warning">CRUD</button>
                 </div>
               </div>
             </div>

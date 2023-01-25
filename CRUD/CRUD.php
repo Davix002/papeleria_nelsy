@@ -1,6 +1,6 @@
 <?php
-include '..\modelos\header.php';
-include("..\connection.php");
+include '../modelos/header.php';
+include("../connection.php");
 
 $sql="SELECT * FROM productos";
 $query=mysqli_query($con,$sql);
