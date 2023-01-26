@@ -77,10 +77,5 @@ $query=mysqli_query($con,$sql);
                     </div>  
             </div>
             <?php include '../modelos/footer.php'; ?>
-            <script>
-
-            <?php include '../javascript.js'; ?>                     
-
-            </script>
     </body>
    
