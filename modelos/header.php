@@ -29,7 +29,7 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/imagenes/imagen.php">Nosotros</a>
+                    <a class="nav-link" aria-current="page" href="imagenes/imagen.php">Nosotros</a>
                   </li>
                   <!-- <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
@@ -39,7 +39,7 @@
                   </li> -->
                 </ul>
                 <div class="btn-group btodt" role="group" aria-label="Basic example">
-                  <button type="button" onclick="window.open('/CRUD/CRUD.php')" class="btn btn-warning">CRUD</button>
+                  <button type="button" onclick="window.open('CRUD/CRUD.php')" class="btn btn-warning">CRUD</button>
                 </div>
               </div>
             </div>
