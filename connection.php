@@ -9,6 +9,11 @@
     $password = "";
     $dbnombre = "db_nelsy";*/
 
+    echo $_ENV['MYSQLHOST'];
+    echo $_ENV['MYSQLUSER'];
+    echo $_ENV['MYSQLPASSWORD'];
+    echo $_ENV['MYSQLDATABASE'];
+
     $host = $_ENV['MYSQLHOST'];
     $usuario = $_ENV['MYSQLUSER'];
     $password = $_ENV['MYSQLPASSWORD'];
