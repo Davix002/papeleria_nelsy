@@ -7,19 +7,20 @@
     /*$host = "localhost";
     $usuario = "root";
     $password = "";
-    $dbnombre = "db_nelsy";*/
+    $dbnombre = "db_nelsy";
 
-    echo getenv('MYSQLHOST');
-    echo getenv('MYSQLUSER');
-    echo getenv('MYSQLPASSWORD');
-    echo getenv('MYSQLDATABASE');
+    echo $_ENV['MYSQLHOST'];
+    echo $_ENV['MYSQLUSER'];
+    echo $_ENV['MYSQLPASSWORD'];
+    echo $_ENV['MYSQLDATABASE'];*/
 
-    $host = getenv('MYSQLHOST');
-    $usuario = getenv('MYSQLUSER');
-    $password = getenv('MYSQLPASSWORD');
-    $dbnombre = getenv('MYSQLDATABASE');
+    $host = $_ENV['MYSQLHOST'];
+    $usuario = $_ENV['MYSQLUSER'];
+    $password = $_ENV['MYSQLPASSWORD'];
+    $dbnombre = $_ENV['MYSQLDATABASE'];
+    $db_port = $_ENV['MYSQLPORT'];
 
-    $con = mysqli_connect($host, $usuario, $password, $dbnombre);
+    $con = mysqli_connect($host, $usuario, $password, $dbnombre,$db_port);
 
     if (!$con)
     {
