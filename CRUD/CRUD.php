@@ -76,7 +76,7 @@ $query=mysqli_query($con,$sql);
                         </div>
                     </div>  
             </div>
-            <?php include '..\modelos\footer.php'; ?>
+            <?php include '/modelos/footer.php'; ?>
             <script>
                 document.getElementById("costo").addEventListener("change", calcular_precios);
                 

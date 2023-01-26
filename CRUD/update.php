@@ -1,6 +1,6 @@
 <?php
 
-include("..\connection.php");
+include "/connection.php";
 
 $id=$_POST['id'];
 $producto=$_POST['producto'];

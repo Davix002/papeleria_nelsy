@@ -1,5 +1,5 @@
 <?php
-include("..\connection.php");
+include "/connection.php";
 
 $producto=$_POST['producto'];
 $costo_compra=$_POST['costo_compra'];

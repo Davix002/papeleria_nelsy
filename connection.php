@@ -1,13 +1,8 @@
 <?php
-    //$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    //Esto se utiliza para correrlo en local
     /*require __DIR__ . '/vendor/autoload.php';
-    $dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
-    $dotenv->load();*/
-
-    /*$host = "localhost";
-    $usuario = "root";
-    $password = "";
-    $dbnombre = "db_nelsy";*/
+    $dotenv = Dotenv/Dotenv::createImmutable(__DIR__);
+    $dotenv->load();*/ 
 
     $host = $_ENV['MYSQLHOST'];
     $usuario = $_ENV['MYSQLUSER'];
