@@ -31,8 +31,8 @@ $query=mysqli_query($con,$sql);
                                     <input type="text" class="form-control mb-2" name="costo_compra" placeholder="Costo de compra" id="costo" required>
                                     <b><label for="p_uni">Precio por unidad (+25%)</label></b>
                                     <input type="text" class="form-control mb-2" name="precio_unidad" placeholder="Precio unidad" id="p_uni" required>
-                                    <b><label for="p_paq">Precio por paquete (+20%)</label></b>
-                                    <input type="text" class="form-control mb-2" name="precio_por_mayor" placeholder="Precio por mayor" id="p_paq" required>
+                                    <b><label for="p_may">Precio por mayor (+20%)</label></b>
+                                    <input type="text" class="form-control mb-2" name="precio_por_mayor" placeholder="Precio por mayor" id="p_may" required>
                                     <b><label for="exis">Existencias</label></b>
                                     <input type="text" class="form-control mb-2" name="existencias" placeholder="Existencias" id="exis">
                                     <input type="submit" class="btn btn-primary">

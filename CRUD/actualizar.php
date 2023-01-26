@@ -22,18 +22,24 @@ $row=mysqli_fetch_array($query);
     </head>
     <body>
                 <div class="container mt-5">
+                <h1>Ingrese datos</h1>
                     <form action="update.php" method="POST">
                     
                                 <input type="hidden" name="id" value="<?php echo $row['id']  ?>">
-                                
-                                <input type="text" class="form-control mb-3" name="producto" placeholder="Nombre producto" value="<?php echo $row['producto']  ?>">
-                                <input type="text" class="form-control mb-3" name="costo_compra" placeholder="Costo compra" value="<?php echo $row['costo_compra']  ?>">
-                                <input type="text" class="form-control mb-3" name="precio_unidad" placeholder="Precio unidad" value="<?php echo $row['precio_unidad']  ?>">
-                                <input type="text" class="form-control mb-3" name="precio_por_mayor" placeholder="Precio por mayor" value="<?php echo $row['precio_por_mayor']  ?>">
-                                <input type="text" class="form-control mb-3" name="existencias" placeholder="Existencias" value="<?php echo $row['existencias']  ?>">
+                                <b><label for="producto">Nombre producto</label></b>
+                                <input type="text" class="form-control mb-3" name="producto" placeholder="Nombre producto" id="producto" required value="<?php echo $row['producto']  ?>">
+                                <b><label for="costo">Costo de compra</label></b>
+                                <input type="text" class="form-control mb-3" name="costo_compra" placeholder="Costo compra" id="costo" required value="<?php echo $row['costo_compra']  ?>">
+                                <b><label for="p_uni">Precio por unidad (+25%)</label></b>
+                                <input type="text" class="form-control mb-3" name="precio_unidad" placeholder="Precio unidad" id="p_uni" required value="<?php echo $row['precio_unidad']  ?>">
+                                <b><label for="p_may">Precio por mayor (+20%)</label></b>
+                                <input type="text" class="form-control mb-3" name="precio_por_mayor" placeholder="Precio por mayor" id="p_may" required value="<?php echo $row['precio_por_mayor']  ?>">
+                                <b><label for="exis">Existencias</label></b>
+                                <input type="text" class="form-control mb-3" name="existencias" placeholder="Existencias" id="exis" value="<?php echo $row['existencias']  ?>">
                             <input type="submit" class="btn btn-primary btn-block" value="Actualizar">
                     </form>
                     
                 </div>
+                <?php include '../modelos/footer.php'; ?>
     </body>
 </html>
