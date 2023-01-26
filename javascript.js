@@ -52,6 +52,7 @@
     }
 
     document.getElementById("costo").addEventListener("change", calcular_precio);
+    document.getElementById("p_uni").addEventListener("change", calcular_precio_mayor);
                 
     function roundToMultipleOf100(value) {
         return Math.round(value / 100) * 100;
