@@ -51,21 +51,18 @@
 	  document.getElementById("ejemplo").innerHTML = mensaje;
     }
 
-    //dividimos el calculo de los precios en dos funciones
-    document.getElementById("costo").addEventListener("change", calcular_precio_unidad);
-    document.getElementById("p_uni").addEventListener("change", calcular_precio_mayor);
+    document.getElementById("costo").addEventListener("change", calcular_precio);
                 
     function roundToMultipleOf100(value) {
         return Math.round(value / 100) * 100;
     }
 
-    function calcular_precio_unidad() {
+    function calcular_precio() {
+      if(document.getElementById("p_uni").value==""){
         document.getElementById("p_uni").value = roundToMultipleOf100(document.getElementById("costo").value*1.25+100);
-    }
-
-    function calcular_precio_mayor() {
-      document.getElementById("p_may").value = roundToMultipleOf100(document.getElementById("p_uni").value*0.94);
-    }
+      }
+        document.getElementById("p_may").value = roundToMultipleOf100(document.getElementById("p_uni").value*0.94);
+      }
 
     const monedas = document.querySelectorAll('.moneda');
     monedas.forEach(moneda => {
