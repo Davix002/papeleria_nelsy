@@ -50,3 +50,19 @@
 	  }
 	  document.getElementById("ejemplo").innerHTML = mensaje;
     }
+
+    document.getElementById("costo").addEventListener("change", calcular_precios);
+                
+    function roundToMultipleOf100(value) {
+        return Math.round(value / 100) * 100;
+    }
+
+    function calcular_precios() {
+        document.getElementById("p_uni").value = roundToMultipleOf100(document.getElementById("costo").value*1.25+100);
+        document.getElementById("p_paq").value = roundToMultipleOf100(document.getElementById("p_uni").value*0.94);
+    }
+
+    const monedas = document.querySelectorAll('.moneda');
+    monedas.forEach(moneda => {
+    moneda.textContent = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP',minimumFractionDigits: 0}).format(parseFloat(moneda.textContent));
+    });
