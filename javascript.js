@@ -51,6 +51,7 @@
 	  document.getElementById("ejemplo").innerHTML = mensaje;
     }
 
+    //dividimos el calculo de los precios en dos funciones
     document.getElementById("costo").addEventListener("change", calcular_precio_unidad);
     document.getElementById("p_uni").addEventListener("change", calcular_precio_mayor);
                 
@@ -64,7 +65,7 @@
 
     function calcular_precio_mayor() {
       document.getElementById("p_may").value = roundToMultipleOf100(document.getElementById("p_uni").value*0.94);
-  }
+    }
 
     const monedas = document.querySelectorAll('.moneda');
     monedas.forEach(moneda => {
