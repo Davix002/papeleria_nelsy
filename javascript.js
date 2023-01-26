@@ -44,7 +44,7 @@
     var mensaje;
     var opcion = confirm('¿Seguro de eliminar id= '+id+' ? ');
     if (opcion == true) {
-        window.location.href = "CRUD/delete.php?id="+id;
+        window.location.href = "../CRUD/delete.php?id="+id;
 	  } else {
 	    mensaje = "Has clickeado Cancelar";
 	  }
